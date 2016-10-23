@@ -1,0 +1,1 @@
+docker exec -it dontfeartherebase_web_1 bash -c "php $@"
