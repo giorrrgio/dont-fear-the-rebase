@@ -39,7 +39,7 @@ class Pugger
     {
         return [
             'name' => $this->name,
-            'company' => $this->company,
+            'company' => 'Company:' .  $this->company,
             'nick' => $this->nick
         ];
     }
