@@ -53,6 +53,16 @@ class Meeting
         return $this;
     }
 
+    public function kickBanPugger(Pugger $pugger)
+    {
+        foreach ($this->puggers as $i => $puggerToBan) {
+            if ($puggerToBan->getName() == $pugger->getName()) {
+                unset($this->puggers[$i]);
+                break;
+            }
+        }
+    }
+
     public function render()
     {
         return [

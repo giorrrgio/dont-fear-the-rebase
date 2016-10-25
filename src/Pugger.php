@@ -43,4 +43,9 @@ class Pugger
             'nick' => $this->nick
         ];
     }
+
+    public function getName()
+    {
+        return $this->name;
+    }
 }
